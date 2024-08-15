@@ -1,0 +1,33 @@
+body {
+  font-family: 'Lato';
+  color: $gray-900;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+code{
+  font-family: 'Roboto Mono', monospace;
+  color: $success;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.icon-unfilled {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}

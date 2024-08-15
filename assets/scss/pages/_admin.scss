@@ -1,0 +1,36 @@
+.admin-list th, .admin-list td {
+  padding-top: 15px;
+  color: $dark;
+}
+.modal-content img {
+  width: 141px;
+  height: 141px;
+  object-fit: cover;
+  object-position: top;
+}
+#rotateImage {
+  transition: transform 0.5s ease;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+.form-select{
+  border-radius: 0px;
+}
+.page-item {
+  display: block;
+  .page-link {
+    color: $success;
+    border: 1px solid $success;
+    border-radius: 0px;
+  }
+  .page-link:hover{
+    background-color: $success;
+    color: white;
+  }
+  .page-link.active{
+    background-color: $success;
+    color: white;
+  }
+}

@@ -1,0 +1,13 @@
+.index-title {
+  font-size: 100px;
+}
+.dropdown-toggle::after{
+  display: none;
+}
+.ck-rounded-corners .ck.ck-editor__main>.ck-editor__editable, .ck.ck-editor__main>.ck-editor__editable.ck-rounded-corners{
+  min-height: 300px;
+}
+.content {
+  width: calc( 100% - 296px);
+  margin-left: auto;
+}

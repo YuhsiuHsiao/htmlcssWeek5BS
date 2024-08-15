@@ -1,0 +1,14 @@
+.fs-sm{ //14px
+  font-size: $small-font-size;
+}
+.fs-xs{ //12px
+  font-size: $sub-sup-font-size;
+}
+.gray-400{
+  color: $gray-400;
+}
+.list-group .list-group-item.active {
+  color: unset;
+  background-color: #F8F9FA;
+  border-color: #CED4DA;
+}

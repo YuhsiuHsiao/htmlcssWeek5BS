@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact</title>
+  </head>
+  <body>
+    <div class="d-flex">
+      <%- include('./layout/header', {page:'admin'}); -%>
+  
+      <main class="px-5 content pb-5">
+        <header class="d-flex mx-lg-5">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <h1 class="navbar-brand fs-4 fw-bold py-3 mb-1" href="#">Admin</h1>
+              <div class="collapse navbar-collapse show " id="navbarNavDarkDropdown">
+                <ul class="navbar-nav pt-0">
+                  <li class="nav-item dropdown">
+                    <a class="btn dropdown-toggle fw-bold d-flex align-items-center border-0" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="material-symbols-outlined fs-5 text-success">add</span><span>Add New Admin</span>
+                    </a>
+                    <ul class="dropdown-menu p-0">
+                      <li><a class="dropdown-item" href="#">Course A</a></li>
+                      <li><a class="dropdown-item" href="#">Course B</a></li>
+                      <li><a class="dropdown-item" href="#">Course C</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <a href="#" class="ms-auto p-2 mt-3"><span class="material-symbols-outlined">search</span></a>
+          <a href="#" class="p-2 mt-3"><span class="material-symbols-outlined">notifications_active</span></a>
+        </header>
+        <div class="mx-lg-5">
+          <table class="table table-hover text-dark admin-list">
+            <thead>
+              <tr class="fw-bold">
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Verified</th>
+                <th scope="col">&nbsp;</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">#1</th>
+                <td>Emir Wicks</td>
+                <td>emir.wicks@mail.com</td>
+                <td>Yes</td>
+                <td class="text-end">
+                  <!-- Button trigger modal -->
+                  <a href="#" class="px-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <span class="material-symbols-outlined align-bottom">visibility</span>
+                  </a>
+                  <a href="#" class="px-2" data-bs-toggle="modal" data-bs-target="#admin-edit">
+                    <span class="material-symbols-outlined align-bottom">edit</span>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">#2</th>
+                <td>Zaina Goldsmith</td>
+                <td>zaina.goldsmith@mail.com</td>
+                <td>Yes</td>
+                <td class="text-end">
+                  <a href="#" class="px-2">
+                    <span class="material-symbols-outlined align-bottom">visibility</span>
+                  </a>
+                  <a href="#" class="px-2">
+                    <span class="material-symbols-outlined align-bottom">edit</span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">#3</th>
+                <td>Mahima Lopez</td>
+                <td>mahima.lopez@mail.com</td>
+                <td>Yes</td>
+                <td class="text-end">
+                  <a href="#" class="px-2">
+                    <span class="material-symbols-outlined align-bottom">visibility</span>
+                  </a>
+                  <a href="#" class="px-2">
+                    <span class="material-symbols-outlined align-bottom">edit</span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">#4</th>
+                <td>Pharrell Murray</td>
+                <td>pharrell.murray@mail.com</td>
+                <td>Yes</td>
+                <td class="text-end">
+                  <a href="#" class="px-2">
+                    <span class="material-symbols-outlined align-bottom">visibility</span>
+                  </a>
+                  <a href="#" class="px-2">
+                    <span class="material-symbols-outlined align-bottom">edit</span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">#5</th>
+                <td>Mahima Lopez</td>
+                <td>mahima.lopez@mail.com</td>
+                <td>Yes</td>
+                <td class="text-end">
+                  <a href="#" class="px-2">
+                    <span class="material-symbols-outlined align-bottom">visibility</span>
+                  </a>
+                  <a href="#" class="px-2">
+                    <span class="material-symbols-outlined align-bottom">edit</span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">#6</th>
+                <td>Mahima Lopez</td>
+                <td>mahima.lopez@mail.com</td>
+                <td>Yes</td>
+                <td class="text-end">
+                  <a href="#" class="px-2">
+                    <span class="material-symbols-outlined align-bottom">visibility</span>
+                  </a>
+                  <a href="#" class="px-2">
+                    <span class="material-symbols-outlined align-bottom">edit</span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">#7</th>
+                <td>Mahima Lopez</td>
+                <td>mahima.lopez@mail.com</td>
+                <td>Yes</td>
+                <td class="text-end">
+                  <a href="#" class="px-2">
+                    <span class="material-symbols-outlined align-bottom">visibility</span>
+                  </a>
+                  <a href="#" class="px-2">
+                    <span class="material-symbols-outlined align-bottom">edit</span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">#8</th>
+                <td>Mahima Lopez</td>
+                <td>mahima.lopez@mail.com</td>
+                <td>Yes</td>
+                <td class="text-end">
+                  <a href="#" class="px-2">
+                    <span class="material-symbols-outlined align-bottom">visibility</span>
+                  </a>
+                  <a href="#" class="px-2">
+                    <span class="material-symbols-outlined align-bottom">edit</span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">#9</th>
+                <td>Mahima Lopez</td>
+                <td>mahima.lopez@mail.com</td>
+                <td>Yes</td>
+                <td class="text-end">
+                  <a href="#" class="px-2">
+                    <span class="material-symbols-outlined align-bottom">visibility</span>
+                  </a>
+                  <a href="#" class="px-2">
+                    <span class="material-symbols-outlined align-bottom">edit</span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">#10</th>
+                <td>Mahima Lopez</td>
+                <td>mahima.lopez@mail.com</td>
+                <td>Yes</td>
+                <td class="text-end">
+                  <a href="#" class="px-2">
+                    <span class="material-symbols-outlined align-bottom">visibility</span>
+                  </a>
+                  <a href="#" class="px-2">
+                    <span class="material-symbols-outlined align-bottom">edit</span>
+                </td>
+              </tr>                                                                                                  
+            </tbody>
+          </table>
+          <nav aria-label="Page navigation" class="w-100 border-success border-2">
+            <ul class="pagination fw-bold d-flex justify-content-end">
+              <li class="page-item">
+                <a class="page-link pb-0">
+                  <span class="material-symbols-outlined">
+                  chevron_left
+                  </span></a>
+              </li>
+              <li class="page-item"><a class="page-link active" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link pb-0" href="#">
+                  <span class="material-symbols-outlined">
+                    chevron_right
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        
+      </main>
+
+      <!-- Modal-visibility -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content p-4 rounded-0">
+            <div class="d-flex align-items-start p-2">
+              <img src="../assets/images/emir.jpeg" alt="emir">
+              <div class="modal-body py-0 pe-0 text-dark position-relative">
+                <button type="button" class="btn-close position-absolute top-0 end-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h6 class="mb-1">#1</h6>
+                <p class="mb-0">Admin</p>
+                <h3 class="fs-5 fw-bold">Emir Wicks</h3>
+                <p class="mb-0 text-secondary fs-sm">emir.wicks@mail.com</p>
+                <div class="w-100 mt-3 d-flex justify-content-between down-open">
+                  <span class="bg-light px-1"> Verified </span>
+                  <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><span class="material-symbols-outlined text-success" id="rotateImage">keyboard_arrow_down</span></a>
+                </div>
+                <div class="collapse" id="collapseExample">
+                  <div class="pt-4 border-0 d-flex justify-content-between">
+                    <button type="button" class="btn btn-outline-danger rounded-0 w-50 fw-bold" data-bs-dismiss="modal">Deactivate</button>
+                    <button type="button" class="btn btn-success rounded-0 w-50 ms-3 fw-bold">Edit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal-Edit -->
+      <div class="modal fade" id="admin-edit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-4 fw-bold" id="staticBackdropLabel">Edit Admin</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body pt-0 px-5">
+              <form class="text-dark">
+                <div class="acount">
+                  <h2 class="fs-5 fw-bold">Account</h2>
+                  <div class="mb-3">
+                    <label for="name" class="form-label fs-sm mb-0">Name</label>
+                    <input type="text" value="Emir Wicks" readonly class="form-control p-3 border-0 bg-light rounded-0" id="name" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label fs-sm mb-0">Email</label>
+                    <input type="email" value="emir.wicks@mail.com" readonly class="form-control p-3 border-0 bg-light rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                </div>
+                <hr class="border-secondary my-4">
+                <div class="verification">
+                  <h2 class="fs-5 fw-bold">Verification</h2>
+                  <div class="mb-3">
+                    <label for="verified" class="form-label fs-6 mb-0">
+                      <span class="material-symbols-outlined text-success align-bottom">check_circle</span>
+                      <span class="fw-bold">Verified</span>
+                    </label>
+                    <input type="button" value="Send Verification Mail" disabled class="form-control bg-white gray-400 fw-bold p-3 mt-3 rounded-0" id="verified" aria-describedby="emailHelp">
+                  </div>
+                </div>
+                <hr class="border-secondary mt-4">
+                <div class="accessLevel">
+                  <h2 class="fs-5 fw-bold">Access Level</h2>
+                  <div class="mb-3">
+                    <select class="form-select p-3 mt-3 rounded-0" aria-label="Large select example">
+                      <option selected class="mt-3">Admin</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
+                <hr class="border-secondary my-4">                           
+                <h2 class="fs-5 fw-bold">Custom Access</h2>
+                <div class="form-check mt-3">
+                  <div class="mb-3">
+                    <input class="form-check-input border-dark border-2 rounded-0" type="checkbox" value="" id="customLecture">
+                    <label class="form-check-label" for="customLecture">
+                      Lecture
+                    </label>
+                  </div>
+                  <div class="mb-3">
+                    <input class="form-check-input border-dark border-2 rounded-0" type="checkbox" value="" id="customCoupon">
+                    <label class="form-check-label" for="customCoupon">
+                      Coupon
+                    </label>
+                  </div>
+                  <div class="mb-3">
+                    <input class="form-check-input border-dark border-2 rounded-0" type="checkbox" value="" id="customMessage">
+                    <label class="form-check-label" for="customMessage">
+                      Message
+                    </label>
+                  </div>
+                  <div class="mb-3">
+                    <input class="form-check-input border-dark border-2 rounded-0" type="checkbox" value="" id="customSetting">
+                    <label class="form-check-label" for="customSetting">
+                      Setting
+                    </label>
+                  </div>
+                  <div class="mb-3">
+                    <input class="form-check-input border-dark border-2 rounded-0" type="checkbox" value="" id="taskMenu">
+                    <label class="form-check-label" for="taskMenu">
+                      Task Menu
+                    </label>
+                  </div>                  
+                </div>
+                <hr class="border-secondary my-4">
+                <div class="delAccount">
+                  <h2 class="fs-5 fw-bold">Deactivate Account</h2>
+                  <div class="mb-3">
+                    <label for="verified" class="form-label fs-6 mb-0 mt-2 text-danger">
+                      <span class="material-symbols-outlined align-bottom">warning</span>
+                      <span class="fw-bold">This cannot be undone!</span>
+                    </label>
+                    <input type="button" value="Deactivate This Account" class="form-control btn btn-outline-danger fw-bold py-2 mt-3 rounded-0">
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-success rounded-0 w-25 me-3" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-success rounded-0 w-25 me-4">Update</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <script type="module" src="../main.js"></script>
+
+  </body>
+</html>

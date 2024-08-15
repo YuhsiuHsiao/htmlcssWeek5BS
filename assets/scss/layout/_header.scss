@@ -1,0 +1,14 @@
+nav{
+  width: 296px;
+}
+.navbar-nav{
+  .nav-link {
+    padding-left: 28px;
+    border-left: 4px solid transparent;
+    color: $gray-900;
+  }
+  .nav-link.active{ //這是一個複合選擇器，選擇 .nav-link 類別的元素，且同時具有 active 類別的元素。
+    border-left: 4px solid $success;
+    color: $success;
+  }
+}
